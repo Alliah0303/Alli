@@ -1,0 +1,509 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: sans-serif; /* Choose a font you like */
+  margin: auto;
+  background-color: #A259FF; /* Purple background */
+  
+}
+
+/* Header Styling */
+header {
+  position: absolute; /* Positioning the header */
+  top: 20px; /* Distance from the top */
+  left: 20px; /* Distance from the left */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start */
+}
+
+.Name {
+  background-color: #A259FF; /* Keeping it consistent */
+  padding: 10px;
+  color: white;
+  display: flex;
+}
+
+.Name h2 {
+  margin: auto;
+  margin-left: 0; /* Adjusting margin for alignment */
+  margin-top: 0; /* Adjusting margin for alignment */
+  font-weight: lighter;
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+  position: relative;
+  display: flex;
+}
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  list-style-type: none; /* Remove bullet points */
+  margin: 0; /* Reset margins */
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-left: 30px; 
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: lighter;
+  display: flex;
+}
+
+nav a {
+  text-decoration: none; /* Remove underline */
+  color: black;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease; /* Transition for color change */
+  display: flex;
+}
+
+nav a:hover {
+  color:#d3b7f7; /* Change color on hover */
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #61dafb;
+  transition: width 0.4s ease, left 0.4s ease;
+  display: flex;
+}
+
+nav a:hover::after {
+  width: 100%;
+  left: 0;
+  display: flex;
+}
+
+/* Landing Page Styling */
+.landing-page {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  height: calc(110vh - 80px); /* Take up full viewport height minus header */
+}
+
+.landing-page p {
+  font-size: 32px; /* Adjust size as needed */
+  color: black;
+  margin-top: 280px;
+  margin-left: 230px;
+  font-family: "League Spartan", sans-serif;
+  letter-spacing: 8px;
+  display: flex;
+}
+
+.bottom h4 {
+  font-size: 96px; /* Adjust size as needed */
+  color: white;
+  margin-top: 0px;
+  margin-left: 230px;
+  width: 348px;
+  height: 230px;
+  font-family: "League Gothic", sans-serif;
+  letter-spacing: 2px;
+  line-height: 95px;
+  font-weight: bold;
+  animation: fadeMove 3s infinite; /* Apply the fade and move animation */
+  display: flex;
+}
+
+@keyframes fadeMove {
+  0%, 100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  50% {
+      opacity: 0.5;
+      transform: translateY(-20px); /* Move up slightly */
+  }
+}
+
+.my-pic {
+  margin-top: -490px;
+  margin-left: 50%;
+  
+  animation: glow 1.5s infinite alternate; /* Apply glowing effect */
+}
+
+@keyframes glow {
+  0% {
+      filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0));
+  }
+  100% {
+      filter: drop-shadow(0 0 20px rgb(211, 215, 247)); /* Glow effect */
+  }
+}
+
+.About {
+  background: white;
+  font-family: Arial, sans-serif;
+  line-height: 1.8;
+  padding: 2rem;
+  height: auto; /* Changed for responsiveness */
+  width: 100%;
+}
+
+.Me {
+  color: #A259FF; /* Purple color for headings */
+  margin: 20px 0 2rem;
+  text-align: center;
+  font-family: "League Spartan", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.p1, .p2, .p3, .p4 {
+  color: #A259FF;
+  text-align: left;
+  max-width: 800px; 
+  margin: 1rem auto; 
+  font-size: 16px;
+}
+
+.Background, .MySkills {
+  color: #A259FF; /* Purple color for headings */
+  margin: 2rem 0;
+  text-align: center;
+  font-family: "League Spartan", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.Skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 2rem; 
+  padding: 0;
+  list-style: none;
+}
+
+.Skills li {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: lighter;
+  color: #A259FF;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Skills li:hover {
+  transform: scale(1.05); /* Slightly scale up the card */
+  box-shadow: 0 0 10px #A259FF; /* Glow effect */
+}
+
+.Skills img {
+  margin-right: 10px; 
+  width: 40px; 
+  height: auto; 
+}
+
+.project {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #A259FF;
+  height: 20vh;
+}
+
+.project-title, .connect {
+  color: white;
+  font-family: "League Gothic", sans-serif;
+  font-size: 96px;
+  text-align: center;
+  font-weight: lighter;
+  margin:auto;
+}
+
+.project-description {
+  color: black;
+  font-family: "League Spartan", sans-serif;
+  font-size: 32px;
+  text-align: center;
+  margin-top: -40px;
+  letter-spacing: 10px;
+}
+
+.Card {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  min-height: 80vh; 
+  background-color: white;
+  width: 100%;
+  
+}
+
+.Card ul {
+  display: flex;
+  gap: 40px;
+  list-style: none; 
+  padding: 0; 
+}
+
+.Card li {
+  padding: 40px; 
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling and shadow */
+}
+
+.Card li:hover {
+  transform: scale(1.05); /* Slightly scale up the card */
+  box-shadow: 0 0 20px #A259FF; /* Glow effect */
+}
+
+.socialmedia {
+  height: 90vh;
+  width: 100%;
+}
+
+.social {
+  color: black;
+  font-family: "League Spartan", sans-serif;
+  font-size: 32px;
+  text-align: center;
+  margin-top: -20px;
+  letter-spacing: 10px;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin-top: 110px;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.social-icons li {
+  margin: 10px;
+  transition: transform 0.3s ease; /* Transition for scaling */
+}
+
+.social-icons li:hover {
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease; /* Transition for color change */
+}
+
+.social-icons a:hover {
+  color: #A259FF; /* Change color on hover */
+}
+
+.social-icons img {
+  width: 155px;
+  height: 155px;
+  margin: 5px;
+  transition: transform 0.3s ease; /* Transition for scaling */
+}
+
+.social-icons img:hover {
+  transform: rotate(15deg); /* Slight rotation on hover */
+}
+
+.email {
+  font-size: 1.5rem;
+  color: black;
+  font-family: "ledger", sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  letter-spacing: 8px;
+  text-decoration: none;
+  margin-bottom: -80px;
+  position: relative; /* Allow for movement */
+  transition: transform 0.2s ease; /* Smooth transition for the bounce effect */
+}
+
+/* Bounce effect on hover */
+.email :hover {
+  transform: translateY(-10px); /* Move up */
+}
+
+
+
+.gmail {
+  margin-top: 100px;
+}
+
+.footer {
+ 
+  background-color: white;
+  padding: 20px;
+  
+}
+.footer p {
+  text-align: center ;
+  font-family: "ledger", sans-serif;
+  letter-spacing: 5px;
+  font-size: 14px;
+}
+
+
+/* Media Queries for Responsive Design */
+@media screen and (min-width: 357px) and (max-width: 768px) {
+  /* Body and Header */
+
+  .Name h2 {
+      margin-left: -10px;
+      font-size: 18px; /* Adjust font size for smaller screens */
+      text-align: center; /* Center the text */
+  }
+
+  nav ul {
+    margin-left: 10px;
+     gap: 20px;
+      flex-direction: row; /* Stack navigation items */
+      align-items: center; /* Center align */
+  }
+
+  nav li {
+     font-size: 14px;
+      margin-left: 0; /* Reset margin */
+      margin-bottom: 10px; /* Add spacing between items */
+  }
+
+  /* Landing Page */
+  .landing-page {
+      height: auto; /* Allow height to adjust */
+      padding: 20px; /* Add padding */
+      align-items: center; /* Center items */
+  }
+
+  .landing-page p {
+      font-size: 25px; /* Smaller font size */
+      margin-top: 130px; /* Adjust margin */
+      margin-left: -15px; /* Reset margin */
+      text-align: center; /* Center align text */
+  }
+
+  .bottom h4 {
+    margin-top: 10px;
+      font-size: 56px; /* Smaller font size */
+      margin-left: 85px; /* Reset margin */
+      width: auto; /* Allow width to adjust */
+      line-height: 48px; /* Adjust line height */
+  }
+  .my-pic{
+    margin-top: -100px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  /* Skills Section */
+  .Skills ul {
+      flex-direction: column; /* Stack skills vertically */
+      align-items: center; /* Center items */
+  }
+
+  .Skills li {
+      margin-bottom: 10px; /* Space between items */
+      padding: 10px; /* Adjust padding */
+  }
+
+  /* Project Section */
+  .project {
+      height: auto; /* Allow height to adjust with content */
+      margin: 20px 0; /* Space above and below */
+  }
+
+  .project-title, .connect {
+      font-size: 38px; /* Smaller font size */
+  }
+
+  .project-description {
+      font-size: 14px; /* Smaller font size */
+      margin-top: -10px; /* Reset margin */
+  }
+
+  /* Card Section */
+  .Card {
+      flex-direction: column; /* Stack cards vertically */
+  }
+
+  .Card ul {
+    gap:10px;
+      flex-direction: column; /* Stack list items */
+      align-items: center; /* Center align */
+      padding: 0; /* Reset padding */
+  }
+
+  .Card li {
+      width: 300px;
+      padding: 20px; /* Adjust padding */
+      margin-top: 40px;
+      margin-bottom: 30px; /* Space between cards */
+      gap: -100px;
+  }
+ 
+
+  /* Social Media Section */
+  .socialmedia {
+      margin-top: 30px;
+      margin-bottom: 100px;
+      height: auto; /* Allow height to adjust */
+  }
+  .connect{
+      font-size: 2.5rem;
+  }
+  .social{
+      text-align: center;
+      letter-spacing: 5px;
+      font-size: 1rem ;
+      margin-top: -10px;
+      
+  }
+
+  .social-icons {
+      align-items: center;
+      flex-direction: column; /* Stack icons vertically */
+      margin-top: 20px; /* Adjust top margin */
+      gap: 40px; /* Space between icons */
+  }
+
+  .social-icons li {
+      margin: 0; /* Reset margin */
+  }
+  .media {
+    width: 100px;
+    height: 100px;
+  }
+  .gmail{
+    margin-top: 70px;
+    
+  }
+  /* Email Section */
+  .email {
+    text-align: center;
+    letter-spacing: 2px;
+      font-size: .8rem; /* Smaller font size */
+      margin-bottom: 0; /* Reset margin */
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: -60px;
+      flex-direction: column; /* Stack footer items */
+      align-items: center; /* Center align */
+  }
+
+  .footer p {
+      letter-spacing: 1px;
+      text-align: center; /* Center text */
+      font-size: 12px; /* Smaller font size for footer */
+  }
+  
+}
