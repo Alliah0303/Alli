@@ -1,6 +1,8 @@
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: sans-serif; /* Choose a font you like */
   margin: auto;
@@ -236,23 +238,32 @@ nav a:hover::after {
 .Card {
   display: flex;
   justify-content: center; 
-  align-items: center; 
+
   min-height: 80vh; 
   background-color: white;
   width: 100%;
+  
   
 }
 
 .Card ul {
   display: flex;
-  gap: 40px;
+  justify-content: center;
+  gap: 20px;
   list-style: none; 
-  padding: 0; 
+  gap:10px;
+  flex-direction: column; /* Stack list items */
+  align-items: center; /* Center align */
+  padding: 0; /* Reset padding */
 }
 
 .Card li {
-  padding: 40px; 
-  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: 70%;
+  height: auto;
+  padding: 30px; 
+  justify-content: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling and shadow */
 }
 
@@ -359,6 +370,7 @@ nav a:hover::after {
   .Name h2 {
       margin-left: -10px;
       font-size: 18px; /* Adjust font size for smaller screens */
+      font-weight: normal;
       text-align: center; /* Center the text */
   }
 
@@ -377,7 +389,7 @@ nav a:hover::after {
 
   /* Landing Page */
   .landing-page {
-      height: auto; /* Allow height to adjust */
+      height: 100vh; /* Allow height to adjust */
       padding: 20px; /* Add padding */
       align-items: center; /* Center items */
   }
@@ -442,7 +454,7 @@ nav a:hover::after {
   }
 
   .Card li {
-      width: 300px;
+      width: 380px;
       padding: 20px; /* Adjust padding */
       margin-top: 40px;
       margin-bottom: 30px; /* Space between cards */
