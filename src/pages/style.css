@@ -480,6 +480,7 @@ nav a:hover::after {
   }
 
   .social-icons {
+    
       align-items: center;
       flex-direction: column; /* Stack icons vertically */
       margin-top: 20px; /* Adjust top margin */

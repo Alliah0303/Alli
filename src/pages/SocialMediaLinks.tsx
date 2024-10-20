@@ -11,17 +11,17 @@ function SocialMediaLinks () {
        <p className="social"> ON MY SOCIAL NETWORKS OR EMAIL </p>
        <ul className="social-icons"> 
         <li className='media'>
-          <a href='https://www.facebook.com/your-facebook-profile'> 
+          <a href='https://www.facebook.com/profile.php?id=100020038524919&mibextid=ZbWKwL'> 
             <img src={facebook} alt="Facebook" />
           </a>
         </li>
         <li className='media'>
-          <a href='https://www.instagram.com/your-instagram-profile'> 
+          <a href='https://www.instagram.com/jude_alliah/'> 
             <img src={instagram} alt="Instagram" />
           </a>
         </li>
         <li className='media'>
-          <a href='https://twitter.com/your-twitter-profile'> 
+          <a href='https://x.com/Alliah0303'> 
             <img src={twitter} alt="Twitter" />
           </a>
         </li>
