@@ -23,7 +23,7 @@ function App() {
 
   return (
     
-    <div>
+    <div className='parent'>
     {
       loading?
       <PulseLoader className="loader"

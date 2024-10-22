@@ -1,7 +1,14 @@
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .loader{
     display: flex;
-    justify-self: center;
-    align-self: center;
+    justify-content: center;
+    align-items: center;
     margin-top: 350px;
 
 }
+
+    
