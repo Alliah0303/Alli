@@ -271,6 +271,14 @@ nav a:hover::after {
   transform: scale(1.05); /* Slightly scale up the card */
   box-shadow: 0 0 20px #A259FF; /* Glow effect */
 }
+.descrip{
+  color: #A259FF ;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
 
 .socialmedia {
   height: 90vh;
@@ -460,6 +468,11 @@ nav a:hover::after {
       margin-bottom: 30px; /* Space between cards */
       gap: -100px;
   }
+  .descrip{
+  
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
  
 
   /* Social Media Section */
@@ -612,6 +625,11 @@ nav a:hover::after {
         width: 90%; /* Allow cards to fit within the screen */
         padding: 20px; /* Adjust padding */
         margin: 20px 0; /* Space between cards */
+    }
+    .descrip{
+
+      font-size: 23px;
+      margin-bottom: 50px;
     }
   
     /* Social Media Section */
