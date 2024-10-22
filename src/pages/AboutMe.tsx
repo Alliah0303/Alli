@@ -6,6 +6,8 @@ import Icons5 from '../images/Nodejs.svg'
 import Icons6 from '../images/Visual Studio Code.svg'
 import '../pages/style.css'
 
+
+
 function AboutMe  ()  {
   return (
     <div id= "bio"className="About">
@@ -44,9 +46,10 @@ function AboutMe  ()  {
       <h3 className="MySkills"> My Skills </h3>
       <div className="Skills">
         <ul>
-            <li><img src={Icons1}></img>HTML</li> 
-            <li><img src={Icons2}></img>CSS</li>
-            <li><img src={Icons3}></img>FIGMA</li>
+            
+            <li><img src={Icons1}></img>HTML </li> 
+            <li><img src={Icons2}></img>CSS </li>
+            <li><img src={Icons3}></img>FIGMA </li>
             <li><img src={Icons4}></img>REACTJS</li>
             <li><img src={Icons5}></img>NODEJS</li>
             <li><img src={Icons6}></img>VSCODE</li>
