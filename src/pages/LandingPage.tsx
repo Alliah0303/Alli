@@ -14,7 +14,7 @@ function LandingPage() {
                     <h4>JUDE ALLIAH SALAPANTAN</h4>
                 
                 <div className="my-pic">
-                    <img src={myPic} alt="pic ko" />
+                    <img className="picture" src={myPic} alt="pic ko" />
                 </div>
             </div>
         </div>

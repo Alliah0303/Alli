@@ -364,7 +364,7 @@ nav a:hover::after {
 
 
 /* Media Queries for Responsive Design */
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   /* Body and Header */
 
   .Name h2 {
@@ -409,7 +409,7 @@ nav a:hover::after {
       line-height: 48px; /* Adjust line height */
   }
   .my-pic{
-    margin-top: -100px;
+    margin-top: -50px;
     margin-bottom: 10px;
     margin-left: 50px;
     margin-right: 50px;
@@ -454,7 +454,7 @@ nav a:hover::after {
   }
 
   .Card li {
-      width: 380px;
+      width: 300px;
       padding: 20px; /* Adjust padding */
       margin-top: 40px;
       margin-bottom: 30px; /* Space between cards */
@@ -502,7 +502,7 @@ nav a:hover::after {
   .email {
     text-align: center;
     letter-spacing: 2px;
-      font-size: .8rem; /* Smaller font size */
+      font-size: .7rem; /* Smaller font size */
       margin-bottom: 0; /* Reset margin */
   }
 
@@ -518,5 +518,159 @@ nav a:hover::after {
       text-align: center; /* Center text */
       font-size: 12px; /* Smaller font size for footer */
   }
-  
 }
+  @media screen and (min-width: 768px) and (max-width: 1024px)  {
+    /* Body and Header */
+    .Name h2 {
+        font-size: 22px; /* Adjust font size for 768px */
+        font-weight: normal;
+        text-align: center; /* Center the text */
+    }
+  
+    nav ul {
+        gap: 25px; /* Increase gap between navigation items */
+        flex-direction: row; /* Keep navigation items in a row */
+        align-items: center; /* Center align */
+    }
+  
+    nav li {
+        font-size: 16px; /* Adjust font size */
+        margin-bottom: 10px; /* Add spacing between items */
+    }
+  
+    /* Landing Page */
+    .landing-page {
+        height: 100vh; /* Allow height to adjust */
+        padding: 30px; /* Add padding */
+        align-items: center; /* Center items */
+    }
+  
+    .landing-page p {
+        font-size: 28px; /* Smaller font size */
+        margin-top: 90px; /* Adjust margin */
+        margin-left: -25px;
+    }
+  
+    .bottom h4 {
+        font-size: 64px; /* Smaller font size */
+        margin-left: 250px; /* Reset margin */
+        line-height: 60px; /* Adjust line height */
+    }
+  
+    .my-pic {
+        margin-top: -100px; /* Adjust for centering */
+        margin-bottom: 20px; /* Space below */
+        margin-left: 200px; /* Center align */
+        margin-right: auto; /* Center align */
+    }
+    .picture{
+      width: 60%;
+      height: 60%;
+    }
+  
+    /* Skills Section */
+    .Skills ul {
+        flex-direction: row; /* Keep skills in a row */
+        flex-wrap: wrap; /* Allow wrapping */
+        justify-content: center; /* Center items */
+    }
+  
+    .Skills li {
+        margin: 10px; /* Space between items */
+        padding: 15px; /* Adjust padding */
+    }
+  
+    /* Project Section */
+    .project {
+        height: auto; /* Allow height to adjust with content */
+        margin: 20px 0; /* Space above and below */
+    }
+  
+    .project-title, .connect {
+        font-size: 42px; /* Smaller font size */
+    }
+  
+    .project-description {
+        font-size: 16px; /* Adjust font size */
+        margin-top: 0; /* Reset margin */
+    }
+  
+    /* Card Section */
+    .Card {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center align */
+    }
+  
+    .Card ul {
+        gap: 15px; /* Adjust gap */
+        flex-direction: column; /* Stack list items */
+        align-items: center; /* Center align */
+        padding: 0; /* Reset padding */
+    }
+  
+    .Card li {
+        width: 90%; /* Allow cards to fit within the screen */
+        padding: 20px; /* Adjust padding */
+        margin: 20px 0; /* Space between cards */
+    }
+  
+    /* Social Media Section */
+    .socialmedia {
+        margin-top: 50px;
+        margin-bottom: 80px;
+        height: 80vh; /* Allow height to adjust */
+    }
+  
+    .connect {
+        font-size: 3rem; /* Adjust font size */
+    }
+  
+    .social {
+        text-align: center;
+        letter-spacing: 3px;
+        font-size: 1.2rem; /* Adjust font size */
+        margin-top: -10px;
+    }
+  
+    .social-icons {
+        align-items: center;
+        flex-direction: row; /* Keep icons in a row */
+        margin-top: 130px; /* Adjust top margin */
+        gap: 20px; /* Space between icons */
+    }
+  
+    .social-icons li {
+        margin: 0; /* Reset margin */
+    }
+  
+    .media {
+        width: 250px; /* Adjust size for medium screens */
+        height: 250px; /* Maintain aspect ratio */
+    }
+  
+    .gmail {
+        margin-top: 50px; /* Adjust margin */
+    }
+  
+    /* Email Section */
+    .email {
+        
+        text-align: center;
+        letter-spacing: 2px;
+        font-size: 1.3rem; /* Adjust font size */
+        margin-bottom: 0; /* Reset margin */
+    }
+  
+    /* Footer */
+    .footer {
+        margin-top: -40px; /* Adjust margin */
+        flex-direction: column; /* Stack footer items */
+        align-items: center; /* Center align */
+    }
+  
+    .footer p {
+        letter-spacing: 1px;
+        text-align: center; /* Center text */
+        font-size: 14px; /* Adjust font size for footer */
+    }
+  }
