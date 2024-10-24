@@ -1,14 +1,16 @@
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
+html body {
   font-family: sans-serif; /* Choose a font you like */
   margin: auto;
   background-color: #A259FF; /* Purple background */
-  
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
 }
+
 
 /* Header Styling */
 header {
@@ -134,9 +136,14 @@ nav a:hover::after {
 .my-pic {
   margin-top: -490px;
   margin-left: 50%;
-  
   animation: glow 1.5s infinite alternate; /* Apply glowing effect */
 }
+.picture{
+  width: 70%;
+  height: 70%;
+}
+
+
 
 @keyframes glow {
   0% {
@@ -372,7 +379,7 @@ nav a:hover::after {
 
 
 /* Media Queries for Responsive Design */
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media  (max-width: 490px) {
   /* Body and Header */
 
   .Name h2 {
@@ -532,7 +539,63 @@ nav a:hover::after {
       font-size: 12px; /* Smaller font size for footer */
   }
 }
-  @media screen and (min-width: 768px) and (max-width: 1024px)  {
+@media (max-width:790px){
+  /* Landing Page Styling */
+.landing-page {
+  display: flex;
+  flex-direction: none; /* Stack elements vertically */
+  height: 100%;
+}
+
+.landing-page p {
+  font-size: 28px; /* Adjust size as needed */
+  color: black;
+  margin-top: 180px;
+  margin-left: 230px;
+  font-family: "League Spartan", sans-serif;
+  letter-spacing: 8px;
+  display: flex;
+}
+.my-pic{
+  width: 60%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 160px;
+}
+.About {
+  padding: 2rem;
+  height: auto; /* Changed for responsiveness */
+  width: 100%;
+}
+
+.Me {
+  color: #A259FF; /* Purple color for headings */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "League Spartan", sans-serif;
+  font-weight: bold;
+}
+
+.p1, .p2, .p3, .p4 {
+  color: #A259FF;
+  text-align: left;
+  max-width: 800px; 
+  margin: 0;
+  font-size: 16px;
+}
+.descrip{
+  color: #A259FF ;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+}
+  @media  (max-width: 1190px)  {
     /* Body and Header */
     .Name h2 {
         font-size: 22px; /* Adjust font size for 768px */
@@ -553,7 +616,7 @@ nav a:hover::after {
   
     /* Landing Page */
     .landing-page {
-        height: 100vh; /* Allow height to adjust */
+        height: 100%; /* Allow height to adjust */
         padding: 30px; /* Add padding */
         align-items: center; /* Center items */
     }
@@ -565,8 +628,8 @@ nav a:hover::after {
     }
   
     .bottom h4 {
-        font-size: 64px; /* Smaller font size */
-        margin-left: 250px; /* Reset margin */
+        font-size: 62px; /* Smaller font size */
+        margin-left: 150px; /* Reset margin */
         line-height: 60px; /* Adjust line height */
     }
   
@@ -577,8 +640,8 @@ nav a:hover::after {
         margin-right: auto; /* Center align */
     }
     .picture{
-      width: 60%;
-      height: 60%;
+      width: 70%;
+      height: 70%;
     }
   
     /* Skills Section */
